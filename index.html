@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="funfun.css">
+<body>
+<script>
+  var urlCount = 0;
+  console.log("WHAT")  
+
+  var urls = [
+    'http://samt.xyz/images/scroll/one.html',
+    'http://www.leslieruckman.com/ITP2016/100DaysOfMaking/Day9/',
+    'https://player.vimeo.com/video/72394810',
+    'http://www.leslieruckman.com/ITP2016/100DaysOfMaking/Day83/',
+    'http://ericrosenbaum.github.io/MK-1/',
+    'http://www.leslieruckman.com/ITP2016/100DaysOfMaking/Day81/',
+    'http://www.leslieruckman.com/ITP2016/100DaysOfMaking/Day10/',
+    'http://emojibooth.biz/',
+    'http://otoro.net/planks/',
+    'http://samt.xyz/images/scroll/two.html',
+    'http://www.leslieruckman.com/ITP2016/100DaysOfMaking/Day33/',
+    'http://therewasaguy.github.io/p5-music-viz/demos/08_echonestPitchSegment/',
+    'http://www.leslieruckman.com/ITP2016/100DaysOfMaking/Day12/',
+    'http://samt.xyz/images/scroll/three.html',
+    'http://otoro.net/ml/pendulum-esp-mobile/index.html',
+    'https://www.eventbrite.com/e/create-interactive-web-art-with-p5js-tickets-30506631155?aff=ehomecard',
+    'http://www.leslieruckman.com/ITP2016/100DaysOfMaking/Day8/',
+  ]
+  function setURL(){
+    document.getElementById('iframe').src = urls[urlCount++];
+    if (urlCount == urls.length) {
+      urlCount = 0;
+    }
+  }
+</script>
+<div id="butt" onclick="setURL()">NEXT SKETCH</div>
+<iframe id="iframe" src="http://www.leslieruckman.com/ITP2016/100DaysOfMaking/Day8/" />
+
+</body>
+</html>
